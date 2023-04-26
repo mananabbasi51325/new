@@ -1,0 +1,351 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+      url("../fonts/Montserrat-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Light.woff2") format("woff2"),
+      url("../fonts/Montserrat-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+      url("../fonts/Montserrat-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+      url("../fonts/Montserrat-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body {
+    font-family: "Montserrat";
+    font-size: 16px;
+    line-height: 24px;
+  }
+  ul,
+  ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol span,
+  a,
+  label {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+header .header-Breadcrumb {
+    overflow: hidden;
+	background-color: #035B9A;
+}
+header .header-Breadcrumb li {
+    position: relative;
+}
+header .header-Breadcrumb li a {
+    font-size: 14px;
+    color: #C1DCF8;
+    padding: 4px 0;
+    font-weight: 400;
+	transition: .2s all ease;
+}
+header .header-Breadcrumb li a:hover {
+	color: #ffffff;
+}
+header .header-Breadcrumb ul {
+	column-gap: 37px;
+}
+header .header-Breadcrumb li:after {
+    content: "";
+    position: absolute;
+    background: url(../images/free-listing-top-arrow-links.png) no-repeat;
+    width: 17px;
+    background-size: contain;
+    height: 33px;
+    right: -26px;
+}
+header .header-Breadcrumb li:last-child:after {
+	position: initial;
+}
+header .header-review {
+    padding: 13px 0;
+    background-image: url(../images/header-bg.png);
+    background-position: center center;
+    background-size: cover;
+}
+header .header-review h1 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+}
+header .header-review .review-outer {
+    column-gap: 20px;
+    row-gap: 20px;
+}
+header .review-outer .reviews {
+    background-color: #02644B;
+    border-radius: 3px;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+    row-gap: 15px;
+    padding: 5px 19px;
+}
+header .review-outer .reviews ul {
+    column-gap: 8px;
+}
+header .review-outer .reviews ul li {
+    display: flex;
+    align-items: center;
+}
+header .review-outer .reviews span {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+}
+header .review-outer .reviews ul li svg {
+    max-width: 20px;
+    width: 100%;
+    fill: #ffffff;
+}
+header .review-outer .reviews ul li.active svg {
+    fill: #e9c72a;
+}
+header .write-review a {
+    background-color: #B30020;
+    padding: 10px 14px;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: .3s all ease;
+}
+header .write-review a:hover {
+    background-color: #b30020c7;
+}
+header .main-header {
+    padding: 20px 0;
+}
+header .main-header .container {
+    column-gap: 69px;
+}
+header .main-header .logo {
+    max-width: 111px;
+    width: 100%;   
+}
+header .main-header .logo img {
+    width: 100%;
+    box-shadow: 0 0 43px 10px #0000001f;
+}
+header .menu-wrapper .business-hours { 
+    font-size: 17px;
+    font-weight: 600;
+    color: #003060;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+header .menu-wrapper .business-hours img {
+    width: 10px;
+    margin-left: 2px;
+}
+header .menu-wrapper {
+    flex-grow: 1;
+    align-self: flex-end;
+}
+header .menu-wrapper .business-hours ul {
+    border: 1px solid #DEE2E6;
+    padding: 21px 19px;
+    min-width: 260px;
+    border-radius: 6px;
+    box-shadow: 0 0 43px 10px #0000000f;
+    position: absolute;
+    left: 0;
+    display: none;
+    top: 30px;
+    background-color: #ffffff;
+}
+header .menu-wrapper .business-hours ul.active {
+    display: block;
+}
+header .menu-wrapper .business-hours ul li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 5px 0;
+    column-gap: 20px;
+}
+header .menu-wrapper .business-hours ul li span {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+}
+header .menu-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #035B9A;
+    border-radius: 4px;
+    padding: 15px 20px;
+}
+header .menu-inner .premium {
+    max-width: 215px;
+    width: 100%;
+    padding-left: 10px;
+}
+header .menu-inner .premium img {
+    width: 100%;
+    margin-bottom: -10px;
+    margin-top: -50px;
+}
+header .menu-wrapper .business-hours ul li span.time {
+    color: #035B9A;
+}
+header .main-menu ul li a {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #ffffff;
+    transition: .3s all ease;
+}
+header .main-menu ul li a:hover { 
+    color : #e9e9e9 !important ;
+}
+
+header .main-menu ul {  
+    column-gap: 48px;
+}
+.cova-banner {
+    padding: 28px 0 63px;
+    background-image: url("../images/cova-banner.png");
+    background-size: cover;
+    background-position: center center;
+}
+.cova-banner .button {
+    margin-bottom: 54px;
+}
+.cova-banner .button ul {
+    column-gap: 10px;
+}
+.cova-banner .button ul li a ,
+.cova-banner .button ul li span {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 600;
+    min-height: 47px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    padding: 5px 18px;
+    color: #ffffff;
+    background-color: #035B9A;
+    border-radius: 3px;
+    transition: .3s all ease;
+}
+.cova-banner .button ul li a:hover {
+    background-color: #003060;
+}
+.cova-banner .button ul li span {
+    color: #002E5F;
+    background-color:#ffffff ;
+}
+.cova-banner h1 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+.cova-banner p {
+    font-size: 27px;
+    line-height: 38px;
+    font-weight: 400;
+}
+.cova-banner .contact {
+    margin: 33px 0;
+    max-width: 767px;
+    padding: 28px 35px;
+    border-radius: 4px;
+    border: 3px solid #ffffff;
+}
+.cova-banner .contact ul {
+    column-gap: 26px;
+}
+.cova-banner .contact ul li {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.cova-banner .contact ul .tel a {
+    font-size:28px ;
+    line-height: 31px;
+    font-weight: 600;
+}
+.cova-banner .contact ul .address span {
+    font-size:18px ;
+    line-height: 22px;
+    font-weight: 600;
+}
+.cova-banner .contact ul .visit a {
+    display: flex;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    border-radius: 28px;
+    background-color: #035B9A;
+    color: #ffffff;
+    min-height: 56px;
+    padding: 5px 18px;
+    align-items: center;
+    justify-content: center;
+}
+.video-sec {
+    padding: 20px 0 116px;
+}
